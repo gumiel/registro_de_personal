@@ -11,26 +11,23 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/jquery-ui.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/style.css" />
 
-
     <script src="<?php echo base_url(); ?>public/js/modernizr.js"></script>
     <script src="<?php echo base_url(); ?>public/js/jquery-1.11.1.js"></script>
     <script src="<?php echo base_url(); ?>public/js/jquery.dataTables.min.js"></script>
     <script src="<?php echo base_url(); ?>public/js/jquery.validate.js"></script>
     <script src="<?php echo base_url(); ?>public/js/validacion.js"></script>
-    
     <script src="<?php echo base_url(); ?>public/js/jquery-ui.js"></script>
     <script>
     jQuery(document).ready(function($) {
       $(document).ready( function () {
         $('#table_id').DataTable();
       } );
+
       $( ".datepicker" ).datepicker();
       
       $(function() {
         $( document ).tooltip();
       });
-
-
 
       $('#table_id').DataTable({
           "language": {
@@ -58,20 +55,10 @@
               }
           }
       });
-
-
-
-
-
-
-      
     });
 
-
-
-
 </script>
- <style>
+<style>
 .ui-tooltip, .arrow:after {
 background: black;
 border: 2px solid white;

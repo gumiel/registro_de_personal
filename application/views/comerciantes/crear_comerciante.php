@@ -1,10 +1,7 @@
 <?php $this->load->view('template/header'); ?>
-
     <?php $this->load->view('complementos/menu_header'); ?>
-
     <div class="row">
       <div class="large-9 medium-9 columns">
-
         <div class="row">
           <div class="large-12 columns">
             <hr>
@@ -12,10 +9,8 @@
               <div class="row">
                 <i class="fa fa-arrow-circle-left"></i> <?php echo anchor('comerciantes/listaComerciantes', 'Volver a la lista', 'id="lista-comerciantes"'); ?>
                 <h4 style="text-decoration: underline;"><i class="fa fa-file-text-o"></i> Crear nuevo comerciante</h4>
- 
               </div>
               <?php echo form_open('comerciantes/procesarCrearComerciante','id="formNuevo" name="formNuevo"'); ?>
-
                 <div class="row">
                   <div class="small-12 large-8">
                     <?php if(validation_errors()){ ?>
@@ -27,8 +22,6 @@
                         </div>
                       </div>
                     <?php } ?>
-
-
                     <div class="row">
                       <div class="small-4 columns">
                         <label for="right-label" class="right">Numero de caseta:</label>
@@ -45,14 +38,6 @@
                         <input name="nombres" style="font-weight: bold" value="<?php echo set_value('nombres', ''); ?>" type="text" id="nombres" placeholder="Ingrese sus nombre">
                       </div>
                     </div>
-                    <!-- <div class="row">
-                      <div class="small-4 columns">
-                        <label for="right-label" class="right">Apellidos:</label>
-                      </div>
-                      <div class="small-8 columns">
-                        <input name="apellidos" value="<?php echo set_value('apellidos', ''); ?>" type="text" id="right-label" placeholder="Ingrese sus apellidos">
-                      </div>
-                    </div> -->
                     <div class="row">
                       <div class="small-4 columns">
                         <label for="right-label" class="right">Codigo:</label>
@@ -113,16 +98,10 @@
             </div>
           </div>
         </div>
-
-
-
-
       </div>
-
       <div class="large-3 medium-3 columns">
         <hr>
 			  <h4>Anuncios</h4>
-
 				<div class="panel">
         	<h5>So many components, girl!</h5>
         	<p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
@@ -130,5 +109,4 @@
         </div>
       </div>
     </div>
-
     <?php $this->load->view('template/footer'); ?>

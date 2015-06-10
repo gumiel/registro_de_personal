@@ -1,9 +1,5 @@
 <?php $this->load->view('template/header'); ?>
-
     <?php $this->load->view('complementos/menu_header'); ?>
-
-
-
     <div class="row">
       <?php if ($this->session->flashdata('mensaje')): ?>
         <div data-alert class="alert-box success radius" style="background-color: #ff7d4f;margin-bottom: 0;margin-top: 9px;">
@@ -13,20 +9,14 @@
       <?php endif ?>
               <?php echo form_open('kardex/procesarCrearComerciante','id="formNuevoKardex" name="formNuevoKardex"'); ?>
       <div class="large-6 medium-6 columns">
-
         <div class="row">
           <div class="large-12 columns">
             <hr>
             <div class="callout panel">
               <div class="row">
-                
-
-
                 <i class="fa fa-arrow-circle-left"></i> <?php echo anchor('kardex/listaComerciantes', 'Volver a la lista', 'id="lista-comerciantes"'); ?>
                 <h4 style="text-decoration: underline;"><i class="fa fa-file-text-o"></i> Crear nuevo Kardex</h4>
- 
               </div>
-
                 <div class="row">
                   <div class="small-12 large-12">
                     <?php if(validation_errors()){ ?>
@@ -38,8 +28,6 @@
                         </div>
                       </div>
                     <?php } ?>
-
-
                     <div class="row">
                       <div class="small-4 columns">
                         <label for="right-label" class="right">Nombres:</label>
@@ -136,12 +124,7 @@
 
             </div>
           </div>
-        </div>
-              
-
-
-
-
+        </div>             
       </div>
 
       <div class="large-6 medium-6 columns">
@@ -153,9 +136,7 @@
                 <br>
                 <br>
                 <br>
- 
               </div>
-
                 <div class="row">
                   <div class="small-12 large-12">
                     <?php if(validation_errors()){ ?>
@@ -167,9 +148,6 @@
                         </div>
                       </div>
                     <?php } ?>
-
-
-                  
                     <div class="row">
                       <div class="small-4 columns">
                         <label for="right-label" class="right">Antiguedad:</label>
@@ -234,7 +212,6 @@
                         <input name="fecha_kardex" class="datepicker" value="<?php echo set_value('fecha_kardex', ''); ?>" type="text" id="fecha_kardex" placeholder="Ingrese su fecha">
                       </div>
                     </div>
-
                     <div class="row">
                       <div class="small-4 columns">
                       </div>
@@ -244,58 +221,10 @@
                     </div>
                   </div>
                 </div>
-
             </div>
           </div>
         </div>
       </div>
         <?php echo form_close(); ?>
     </div>
-
-<script>
-$("#formNuevo").validate({
-
-    rules: {
-      ncaseta: {
-        required: true
-      },
-      nombres: {
-        required: true
-      },
-      codigo: {
-        required: true
-      },
-      carnet: {
-        required: true
-      },
-      direccion: {
-        required: true
-      },
-      rubro: {
-        required: true
-      }
-    },
-    messages: {
-      ncaseta: {
-        required: "El numero de caseta es obligatorio"
-      },
-      nombres: {
-        required: "El Nombre es obligatorio"
-      },
-      codigo: {
-        required: "El Codigo es obligatorio"
-      },
-      carnet: {
-        required: "El Carnet es obligatorio"
-      },
-      direccion: {
-        required: "La Direccion es obligatorio"
-      },
-      rubro: {
-        required: "El Rubro es obligatorio"
-      }
-    }
-    
-})
-</script>
     <?php $this->load->view('template/footer'); ?>

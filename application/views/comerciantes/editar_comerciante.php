@@ -1,10 +1,7 @@
 <?php $this->load->view('template/header'); ?>
-
     <?php $this->load->view('complementos/menu_header'); ?>
-
     <div class="row">
       <div class="large-9 medium-9 columns">
-
         <div class="row">
           <div class="large-12 columns">
             <hr>
@@ -12,10 +9,8 @@
               <div class="row">
                 <i class="fa fa-arrow-circle-left"></i> <?php echo anchor('comerciantes/listaComerciantes', 'Volver a la lista', 'id="lista-comerciantes"'); ?>
                 <h4 style="text-decoration: underline;"><i class="fa fa-edit"></i> Editar comerciante</h4>
-
               </div>
               <?php echo form_open('comerciantes/procesarEditarComerciante/'.$id,'id="formNuevo" name="formNuevo"'); ?>
-
                 <div class="row">
                   <div class="small-12 large-8">
                     <?php if(validation_errors()){ ?>
@@ -27,8 +22,6 @@
                         </div>
                       </div>
                     <?php } ?>
-
-
                     <div class="row">
                       <div class="small-4 columns">
                         <label for="right-label" class="right">Numero de caseta:</label>
@@ -102,17 +95,10 @@
                   </div>
                 </div>
               <?php echo form_close(); ?>
-
             </div>
           </div>
         </div>
-
-
-
-
-
       </div>
-
       <div class="large-3 medium-3 columns">
         <hr />
 			  <h5>Anuncios</h5>
@@ -123,5 +109,4 @@
         </div>
       </div>
     </div>
-
     <?php $this->load->view('template/footer'); ?>

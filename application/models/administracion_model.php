@@ -8,13 +8,12 @@ class Administracion_model extends CI_Model {
 		$this->load->library('encrypt');
 	}
 
-	public function getTodosUsuarios(){		
-
+	public function getTodosUsuarios()
+	{		
 		$this->db->select('*');		
 		$this->db->order_by('login_usu', 'ASC');
 		$res = $this->db->get('usuarios');
 		return $res->result_array();
-		
 	}
 
 	public function getUsuario($id='')
@@ -30,9 +29,8 @@ class Administracion_model extends CI_Model {
 
 	public function procesarCrearUsuario($com='')
 	{
-		if($com!=''){
-			$this->db->insert('usuarios', $com);			
-		}
+		if($com!='')
+			$this->db->insert('usuarios', $com);
 	}
 
 	public function procesarEditarUsuario($id,$datos)
@@ -52,12 +50,10 @@ class Administracion_model extends CI_Model {
 
 	public function eliminarUsuario($id='')
 	{
-
 		$this->db->where('id_usu', $id);
 		$this->db->delete('usuarios');
-		
 	}
-
+	
 }
 
 /* End of file administracion_model.php */

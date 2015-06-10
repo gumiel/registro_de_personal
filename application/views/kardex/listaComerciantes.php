@@ -1,24 +1,18 @@
 <?php $this->load->view('template/header'); ?>
-
     <?php $this->load->view('complementos/menu_header'); ?>
-
     <div class="row">
       <div class="large-9 medium-9 columns">
-
         <div class="row">
           <div class="large-12 columns">
             <hr>
             <div class="callout panel">
               <div class="row">
-
                 <?php if ($this->session->flashdata('mensaje')): ?>
                   <div data-alert class="alert-box success radius">
                     <?php echo $this->session->flashdata('mensaje'); ?>
                     <a href="#" class="close">&times;</a>
                   </div>
                 <?php endif ?>
-
-
                 <h4>kardex</h4>
                  <a href="<?php echo site_url().'/kardex/crearComerciante'; ?>" id="link-crear" title="Boton Para crear un nuevo Kardex">
                     <img src="<?php echo base_url(); ?>/public/img/folder.png" width="40" alt="">
@@ -28,18 +22,16 @@
                  <br> 
               </div>
               <table id="table_id">
-                <thead>
-                  
-                <tr>
-                  <td>Nº</td>
-                  <td>Nombre y Apellido</td>
-                  <td>Carnet</td>
-                  <!-- <td>Caseta</td> -->
-                  <td style="width:125px">Opciones</td>
-                </tr>
+                <thead>                  
+                  <tr>
+                    <td>Nº</td>
+                    <td>Nombre y Apellido</td>
+                    <td>Carnet</td>
+                    <!-- <td>Caseta</td> -->
+                    <td style="width:125px">Opciones</td>
+                  </tr>
                 </thead>
-                <tbody>
-                  
+                <tbody>                 
                 <?php for ($i=0; $i <count($allComer) ; $i++) { ?>
                 <tr>
                   <td><?php echo $i+1 ?></td>
@@ -68,12 +60,7 @@
             </div>
           </div>
         </div>
-
-
-
-
       </div>
-
       <div class="large-3 medium-3 columns">
 			  <hr>
         <h5>Anuncios</h5>
@@ -84,5 +71,4 @@
         </div>
       </div>
     </div>
-
     <?php $this->load->view('template/footer'); ?>

@@ -8,8 +8,8 @@ class Comerciantes_model extends CI_Model {
 		$this->load->library('encrypt');
 	}
 
-	public function getTodosComerciantes($ordenamiento=''){		
-
+	public function getTodosComerciantes($ordenamiento='')
+	{		
 		$this->db->select('*');
 
 		if($ordenamiento != '')
@@ -17,7 +17,6 @@ class Comerciantes_model extends CI_Model {
 		
 		$res = $this->db->get('comerciantes');
 		return $res->result_array();
-		
 	}
 
 	public function procesarCrearComerciante($com='')

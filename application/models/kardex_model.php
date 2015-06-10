@@ -2,7 +2,8 @@
 
 class Kardex_model extends CI_Model {
 
-	public function getTodosComerciantes(){
+	public function getTodosComerciantes()
+	{
 		$this->db->select('*');
 		$res = $this->db->get('kardex');
 		return $res->result_array();
@@ -23,15 +24,15 @@ class Kardex_model extends CI_Model {
 		$this->db->select('*');
 		$this->db->where('id_kardex', $id);
 		$res = $this->db->get('kardex');
-		if($res->num_rows() > 0){
+
+		if($res->num_rows() > 0)
 			return $res->row_array();
-		}else{
+		else
 			return array('');
-		}
 	}
 
-	public function eliminarComerciante($id){
-
+	public function eliminarComerciante($id)
+	{
 		$this->db->where('id_kardex', $id);
 		$this->db->delete('kardex');
 

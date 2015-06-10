@@ -1,11 +1,7 @@
 <?php $this->load->view('template/header'); ?>
-
-
     <?php $this->load->view('complementos/menu_header'); ?>
-
     <div class="row">
       <div class="large-9 medium-9 columns">
-
         <div class="row">
           <div class="large-12 columns">
             <hr>
@@ -13,14 +9,9 @@
               <div class="row">
                 <i class="fa fa-arrow-circle-left"></i> <?php echo anchor('administracion/listaUsuarios', 'Volver a la lista', 'id="lista-comerciantes"'); ?>
                 <h4 style="text-decoration: underline;"><i class="fa fa-eye"></i> Ver usuario</h4>
-
               </div>
-
                 <div class="row">
                   <div class="small-8">
-
-
-
                     <div class="row">
                       <div class="small-4 columns">
                         <label for="right-label" class="right">Email:</label>
@@ -52,12 +43,7 @@
             </div>
           </div>
         </div>
-
-
-
-
       </div>
-
       <div class="large-3 medium-3 columns">
         <hr>
         <h5>Anuncios</h5>
@@ -68,5 +54,4 @@
         </div>
       </div>
     </div>
-
     <?php $this->load->view('template/footer'); ?>

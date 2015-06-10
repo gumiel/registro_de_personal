@@ -320,7 +320,6 @@ class Kardex extends CI_Controller {
 			case '12':
 				return 'Diciembre';
 				break;
-			
 			default:
 				return '';
 				break;

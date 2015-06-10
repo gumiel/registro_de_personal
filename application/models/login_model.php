@@ -8,7 +8,8 @@ class Login_model extends CI_Model {
 		$this->load->library('encrypt');
 	}
 
-	public function verificarAcceso($usu,$pass){
+	public function verificarAcceso($usu,$pass)
+	{
 		$this->db->select('*');
 		$this->db->where('login_usu', $usu);
 		$this->db->where('pass_usu', $pass);
@@ -16,7 +17,8 @@ class Login_model extends CI_Model {
 		return $res->row_array();
 	}
 
-	public function devolverDatosUsuario($usu,$pass){
+	public function devolverDatosUsuario($usu,$pass)
+	{
 		$this->db->select('*');
 		$this->db->where('login_usu', $usu);
 		$this->db->where('pass_usu', $pass);

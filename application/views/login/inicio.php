@@ -29,7 +29,6 @@
                 <input class="round button" type="submit" value="Ingresar" >
               </label>
             </div>
-
           </div>
         <?php echo form_close(); ?>
       </div>
@@ -45,4 +44,3 @@
     </div>
   </div>
 <?php $this->load->view('template/footer'); ?>
-
