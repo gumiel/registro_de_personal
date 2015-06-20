@@ -16,7 +16,7 @@ Se uso:
 
 Este proyecto esta en constante Refactorizacion y mejoras. El proyecto real esta completado y en produccion, se tiene ya implementado con variaciones y mejoras indicadas por el cliente.
 
-Mas Detalles.
+Mas Detalles...
 ===================
 Por el momento estaremos mostrando el funcionamiento de esta herramienta en nuestra pagina web.<br>
 http://goo.gl/456Em3<br>
