@@ -15,3 +15,11 @@ Se uso:
 -Jquery UI
 
 Este proyecto esta en constante Refactorizacion y mejoras. El proyecto real esta completado y en produccion, se tiene ya implementado con variaciones y mejoras indicadas por el cliente.
+
+Mas Detalles.
+===================
+Por el momento estaremos mostrando el funcionamiento de esta herramienta en nuestra pagina web.<br>
+http://goo.gl/456Em3<br>
+Tambien puede ver mas articulos interesantes en:<br>
+http://pgumiel.blogspot.com/<br>
+Hablo sobre programacion web y herramientas para poder desarrollar y maquetar<br>
