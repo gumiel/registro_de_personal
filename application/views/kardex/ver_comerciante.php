@@ -212,7 +212,7 @@
   .tarjeta-izq{
     border: 1px solid black;
     border-radius: 15px;
-    width: 450px;
+    width: 360px;
     height: 250px;
     font-size: 14px;
     padding: 5px 15px 5px 15px;
@@ -223,7 +223,7 @@
     border-top: 1px solid black;
     display: inline-block;
     float: left;
-    margin-right: 30px;
+    margin-right: 29px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -241,6 +241,7 @@
   .frente-bloque{
     display: inline-block;
     float: left;
+    margin-top: 6px;
   }
 
 </style>
@@ -257,20 +258,20 @@
       CARNET DE AFILIACION DEL ASOCIADO
     </div>
     <div>
-      CODIGO No.:...................
+      CODIGO No.: <span class="codigo_afiliado_kardex formDato"><?php echo $codigo_afiliado_kardex; ?></span>
     </div>
     <div class="frente-imagen">
       <div class="frente-bloque">
-        <div class="foto-frente" style="border:2px solid black;width:125px;height:125px;text-align: center">
+        <div class="foto-frente" style="border:2px solid black;width:100px;height:100px;text-align: center">
           Fotografia
         </div>
       </div>
       <div class="frente-bloque" style="width:150px">
-        <div>No. PUESTO :................</div>
+        <div>No. PUESTO : <span class="caseta_numero_kardex formDato"><?php echo $caseta_numero_kardex; ?></span>  </div>
         <div>Cbba.:........... de ............</div>
         Válida hasta el:.......... de ............... del <?php echo date('Y'); ?>
       </div>
-      <div class="frente-bloque" style="border:2px solid black;width:125px;height:125px;text-align: center">
+      <div class="frente-bloque" style="border:2px solid black;width:100px;height:125px;text-align: center">
         Pulgar Derecho
       </div>
     </div>
@@ -280,25 +281,25 @@
     <div class="tarjeta-izq-borde">
       <h3>DATOS PERSONALES DEL AFILIADO</h3>
       <div>
-        Apellidos y Nombres ..................
+        Apellidos y Nombres <span class="nombres_kardex formDato"><?php echo $nombres_kardex; ?></span>
       </div>      
       <div>
-        Nacido el ........ de ................ de ....
+        Nacido el <span class="lugar_nacimiento_kardex formDato"><?php echo $nacimiento_kardex; ?></span>
       </div>
       <div>
-        En ...................... Edad ...............
+        En <span class="lugar_nacimiento_kardex formDato"><?php echo $lugar_nacimiento_kardex; ?></span> Edad ...............
       </div>
       <div>
-        Estado Civil ...............Profesión.........
+        Estado Civil<span class="estado_civil_kardex formDato"><?php echo $estado_civil_kardex; ?></span> Profesión.........
       </div>
       <div>
-        Conyuge.......................................
+        Conyuge <span class="conyugue_kardex formDato"><?php echo $conyugue_kardex; ?></span>
       </div>
       <div>
-        Procedencia .................C.I. No...........
+        Procedencia .................C.I. No <span class="ci_kardex formDato"><?php echo $ci_kardex; ?></span>
       </div>
       <div>
-        Domicilio ...................................
+        Domicilio <span class="domicilio_kardex formDato"><?php echo $domicilio_kardex; ?></span>
       </div>
       <div class="firma1-contenedor">
         <div class="firma1">

@@ -206,6 +206,7 @@ class Kardex extends CI_Controller {
 								'codigo_licencia_kardex' => $comerciante['codigo_licencia_kardex'],
 								'lugar_nacimiento_kardex' => $comerciante['lugar_nacimiento_kardex'],
 								'nacimiento_kardex' => $this->fechaLiteral($comerciante['nacimiento_kardex']),
+								'nacimiento_kardexNum' => $comerciante['nacimiento_kardex'],
 								'ci_kardex' => $comerciante['ci_kardex'],
 								'estado_civil_kardex' => $comerciante['estado_civil_kardex'],
 								'profesion_kardex' => $comerciante['profesion_kardex'],
