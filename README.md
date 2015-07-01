@@ -6,14 +6,14 @@ Tambien este registro se puede exportar a excel segun los campos indicados
 
 Herramientas usadas
 ===================
-Se uso: 
--PHP
--codeigniter
--Foundation Framework
--Jquery validate
--DatatableJS
--Jquery UI
-
+Se uso: <br>
+-PHP<br>
+-codeigniter<br>
+-Foundation Framework<br>
+-Jquery validate<br>
+-DatatableJS<br>
+-Jquery UI<br>
+<br>
 Este proyecto esta en constante Refactorizacion y mejoras. El proyecto real esta completado y en produccion, se tiene ya implementado con variaciones y mejoras indicadas por el cliente.
 
 Mas Detalles...
@@ -23,3 +23,9 @@ http://goo.gl/456Em3<br>
 Tambien puede ver mas articulos interesantes en:<br>
 http://pgumiel.blogspot.com/<br>
 Hablo sobre programacion web y herramientas para poder desarrollar y maquetar<br>
+
+
+El ejemplo funcionando puedes verlo en.
+http://gumiel.esy.es/registro_de_personal
+Usuario: admin
+Pass: admin
