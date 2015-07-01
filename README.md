@@ -23,9 +23,9 @@ http://goo.gl/456Em3<br>
 Tambien puede ver mas articulos interesantes en:<br>
 http://pgumiel.blogspot.com/<br>
 Hablo sobre programacion web y herramientas para poder desarrollar y maquetar<br>
-
-
-El ejemplo funcionando puedes verlo en.
-http://gumiel.esy.es/registro_de_personal
-Usuario: admin
-Pass: admin
+<br>
+<br>
+El ejemplo funcionando puedes verlo en.<br>
+http://gumiel.esy.es/registro_de_personal<br>
+Usuario: admin<br>
+Pass: admin<br>
