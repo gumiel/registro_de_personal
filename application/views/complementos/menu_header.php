@@ -35,6 +35,9 @@
               <li>
                 <?php echo anchor('/administracion/listaUsuarios', 'ADMINISTRACION'); ?>
               </li>
+              <li>
+                <?php echo anchor('/rubro/listaRubro', 'RUBRO'); ?>
+              </li>
             </ul>
             <ul class="right">
               <li>

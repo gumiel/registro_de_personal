@@ -17,6 +17,7 @@
     <script src="<?php echo base_url(); ?>public/js/jquery.validate.js"></script>
     <script src="<?php echo base_url(); ?>public/js/validacion.js"></script>
     <script src="<?php echo base_url(); ?>public/js/jquery-ui.js"></script>
+    <script src="<?php echo base_url(); ?>cam/jquery.webcam.js"></script>
     <script>
     jQuery(document).ready(function($) {
       $(document).ready( function () {
@@ -57,6 +58,69 @@
       });
     });
 
+</script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+  
+  $("#webcam").webcam({
+    width: 240,
+    height: 240,
+    mode: "callback",
+    swffile: "<?php echo base_url(); ?>cam/jscam_canvas_only.swf", // canvas only doesn't implement a jpeg encoder, so the file is much smaller
+
+    onTick: function(remain) {
+
+        if (0 == remain) {
+            $("#status").text("Sacando foto!");
+        } else {
+            $("#status").text(remain + " Segundos...");
+        }
+    },
+
+    onSave: function(data) {      
+      var col = data.split(";");
+      var img = image;
+
+      for(var i = 0; i < 320; i++) {
+          var tmp = parseInt(col[i]);
+          img.data[pos + 0] = (tmp >> 16) & 0xff;
+          img.data[pos + 1] = (tmp >> 8) & 0xff;
+          img.data[pos + 2] = tmp & 0xff;
+          img.data[pos + 3] = 0xff;
+          pos+= 4;
+      }
+
+      if (pos >= 4 * 320 * 240) {
+          ctx.putImageData(img, 0, 0);
+          pos = 0;
+      }
+    },
+
+    onCapture: function () {
+      $("#flash").css("display", "block");
+      $("#flash").fadeOut("fast", function () {
+        $("#flash").css("opacity", 1);
+      });
+
+      webcam.save();
+
+      // Show a flash for example
+    },
+
+    debug: function (type, string) {
+        // Write debug information to console.log() or a div, ...
+    },
+
+    onLoad: function () {
+    // Page load
+        var cams = webcam.getCameraList();
+        for(var i in cams) {
+          $("#cams").append("<li>" + cams[i] + "</li>");
+        }
+                    $("#canvas").hide();
+    }
+});
+});
 </script>
 <style>
 .ui-tooltip, .arrow:after {

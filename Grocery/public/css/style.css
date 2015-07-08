@@ -1,0 +1,26 @@
+.top-bar{
+	background-color: #007095!important;
+}
+.top-bar-section li:not(.has-form) a:not(.button){
+	background-color: #007095!important;	
+}
+.top-bar-section li:not(.has-form) a:hover:not(.button){
+	background-color: #021D48!important;		
+}
+label.error{
+	margin-bottom: 15px;
+	margin-top: 4px;
+}
+.errores-login{
+	border: 1px solid red;
+	background: #F2D7D7;
+	padding: 3px 10px 3px 10px;
+	margin-bottom: 12px;
+	display:table;
+}
+.errores-login p{
+	font-size: 10px;
+	color: red!important;
+	margin: 0px;
+
+}
