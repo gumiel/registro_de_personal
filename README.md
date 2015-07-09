@@ -29,3 +29,7 @@ El ejemplo funcionando puedes verlo en.<br>
 http://gumiel.esy.es/registro_de_personal<br>
 Usuario: admin<br>
 Pass: admin<br>
+<br>
+<hr>
+Disculpes si no funciona en algunos momentos y es que estuvieron eliminando todos los usuarios pero ya lo corregi.
+Si vuelve a pasar o tienen algun comenterio estoy en prez.gumiel@gmail.com o skyper: prezgum para responder cualquier consulta. Su pregunta no molesta
